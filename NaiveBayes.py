@@ -42,5 +42,5 @@ st.write(f"ท่านเป็นโรคหัวใจหรือไม่
 
 # แสดงความน่าจะเป็นของแต่ละคลาส
 st.subheader("ความน่าจะเป็นของแต่ละประเภท:")
-df_proba = pd.DataFrame(prediction_proba, columns=Heart.HeartDisease)
+df_proba = pd.DataFrame(prediction_proba, columns='HeartDisease')
 st.dataframe(df_proba.style.format("{:.2%}"))
